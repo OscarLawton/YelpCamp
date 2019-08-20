@@ -18,9 +18,10 @@ var indexRoutes = require("./routes/index");
 
 
 //mongoose.connect("mongodb://localhost/yelpcamp", {useNewUrlParser: true});
-mongoose.connect("mongodb://Arbane:password1@ds233737.mlab.com:33737/yelplcamp");
-//mongodb://Arbane:dRbLDbpGui@63st@ds233737.mlab.com:33737/yelplcamp
-
+mongoose.connect(process.env.DATABASEURL);
+//mongoose.connect("mongodb://Arbane:password1@ds233737.mlab.com:33737/yelplcamp");
+//mongodb://Arbane:password1@ds233737.mlab.com:33737/yelplcamp
+//process.env.databaseURL
 /*
 Campground.create({name: "Goat Valley", img: "https://www.campsitephotos.com/photo/camp/82621/feature_Gold_Head_Branch_State_Park-f3.jpg", description: "This is a great place to meet Goats who are sinlge"}, function(err,campground){
 	if(err){
