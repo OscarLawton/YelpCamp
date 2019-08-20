@@ -69,6 +69,15 @@ app.use("/", indexRoutes);
 app.use("/campgrounds/:id/comments", commentsRoutes);
 app.use("/campgrounds", campgroundRoutes);
 
+/*
+
 app.listen(3000,function(){
 	console.log("It's alliiiiive!!!");
 });
+
+*/
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+ 
