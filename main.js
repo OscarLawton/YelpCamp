@@ -18,9 +18,7 @@ var indexRoutes = require("./routes/index");
 
 
 //mongoose.connect("mongodb://localhost/yelpcamp", {useNewUrlParser: true});
-//mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb://Arbane:password1@ds233737.mlab.com:33737/yelplcamp");
-//mongodb://Arbane:password1@ds233737.mlab.com:33737/yelplcamp
+
 //console.log(process.env.DATABASEURL);
 var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
 mongoose.connect(url, {useNewUrlParser: true});
